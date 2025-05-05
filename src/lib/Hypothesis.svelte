@@ -3,7 +3,7 @@
 		<div class="flex flex-col md:flex-row gap-10 items-center">
 			<div class="grid gap-12">
 				<div>
-					<h2 class="text-2xl font-bold sm:text-6xl">
+					<h2 class="text-2xl font-bold sm:text-6xl text-center">
 						<span>Hypothesis</span>
 					</h2>
 				</div>

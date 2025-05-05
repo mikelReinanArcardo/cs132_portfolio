@@ -51,14 +51,14 @@
 				</li>
 				<li>
 					<a
-						href="https://docs.google.com/spreadsheets/d/1pk9NmED7tb6uZbccLIJrMk5TwXZ0mBls82uCE_opgkk/edit?usp=sharin"
+						href="#data"
 						class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-						aria-current="page">Methods</a
+						aria-current="page">Data</a
 					>
 				</li>
 				<li>
 					<a
-						href="#"
+						href="#results"
 						class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
 						aria-current="page">Results</a
 					>
@@ -72,7 +72,7 @@
 				</li>
 				<li>
 					<a
-						href="#"
+						href="#team"
 						class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
 						aria-current="page">Team</a
 					>
