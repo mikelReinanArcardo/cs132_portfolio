@@ -1,6 +1,8 @@
 <script>
 	import chart1 from '$lib/assets/chart1.png';
 	import chart2 from '$lib/assets/chart2.png';
+	import chart3 from '$lib/assets/chart3.png';
+	import chart4 from '$lib/assets/chart4.jpeg';
 	import nutshell from '$lib/assets/nutshell.png';
 
 	const darkGradientBg =
@@ -27,7 +29,8 @@
 			hypothesisNull:
 				'H₀: There is no significant relationship between the proportion of households with sanitation facilities and the number of dengue cases.',
 			hypothesisAlt:
-				'H₁: Regions with higher proportions of households with sanitation facilities will have fewer dengue cases.'
+				'H₁: Regions with higher proportions of households with sanitation facilities will have fewer dengue cases.',
+			imgSrcBottom: chart3
 		},
 		{
 			id: 'rq2',
@@ -35,7 +38,14 @@
 			title:
 				'Research Question 2: Are there any changes in peak season in Dengue cases? How do they change over time?',
 			imgSrc: chart2,
-			description: 'Placeholder description for Spearman Correlation...'
+			description:
+				'To test this hypothesis, we performed a Time Series Analysis and applied seasonal decomposition to examine the patterns of seasonal peaks in dengue cases from 2019 to 2022. The results showed that dengue cases exhibit clear seasonal peaks, particularly in July, August, and January each year. However, the magnitude of these peaks fluctuates slightly from year to year but remains relatively consistent.\n\nWe then applied an Augmented Dickey-Fuller (ADF) test to check for stationarity in the time series data of dengue cases. The test produced a p-value of 0.032, which is less than 0.05, indicating that the series is stationary, and the seasonality observed in the data is statistically significant.\n\nSince the p-value is less than 0.05, we reject the Null Hypothesis, suggesting that there is a significant change in the magnitude and timing of seasonal dengue peaks over time.',
+			recallTitle: 'Recall:',
+			hypothesisNull:
+				'H₀: There is no significant change in the timing or magnitude of the seasonal peak dengue cases over time.',
+			hypothesisAlt:
+				'H₁: The timing and magnitude of the seasonal peak in dengue cases have significantly changed over the period.',
+			imgSrcBottom: chart4
 		}
 	];
 
@@ -97,7 +107,7 @@
 				alt="{activeTabData.title} - Placeholder Image"
 			/>
 
-			<div class="w-[85%] mx-auto">
+			<div class="w-[85%] mx-auto mb-8">
 				{#if activeTabData.recallTitle}
 					<p class="text-lg text-gray-300 leading-relaxed font-semibold mb-2">
 						{activeTabData.recallTitle}
@@ -106,11 +116,11 @@
 				{#if activeTabData.hypothesisNull}
 					<ul class="list-none pl-4 mb-4">
 						<li class="text-lg text-gray-300 leading-relaxed mb-1">
-							<span class="mr-2">·</span>{activeTabData.hypothesisNull}
+							<span class="mr-2">°</span>{activeTabData.hypothesisNull}
 						</li>
 						{#if activeTabData.hypothesisAlt}
 							<li class="text-lg text-gray-300 leading-relaxed">
-								<span class="mr-2">·</span>{activeTabData.hypothesisAlt}
+								<span class="mr-2">°</span>{activeTabData.hypothesisAlt}
 							</li>
 						{/if}
 					</ul>
@@ -127,9 +137,14 @@
 				{/if}
 			</div>
 
-			<p class="text-lg text-gray-300 leading-relaxed w-[85%] mx-auto text-justify">
-				{activeTabData.description}
-			</p>
+			{#if activeTabData.imgSrcBottom}
+				<img
+					class="w-[60vw] mx-auto block border border-gray-600 rounded shadow-md"
+					src={activeTabData.imgSrcBottom}
+					alt="{activeTabData.title} - Additional Information"
+					loading="lazy"
+				/>
+			{/if}
 		</div>
 	{:else}
 		<p class="p-4 text-center text-gray-500 flex-grow">
