@@ -1,7 +1,20 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;700&display=swap');
+
+@import 'tailwindcss';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@theme {
+	--font-grotesk: 'Host Grotesk', sans-serif;
+	--color-bg1: #0b192f;
+	--color-bg2: #091a32;
+	--color-bg3: #112342;
+	--color-lightblue: #42d0ff;
+	--color-white: #e3f2fd;
+}
+
 html {
 	scroll-behavior: smooth;
 }
