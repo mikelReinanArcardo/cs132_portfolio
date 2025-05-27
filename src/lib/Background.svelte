@@ -2,10 +2,7 @@
 	import BackgroundItem from './BackgroundItem.svelte';
 </script>
 
-<section
-	class="bg-[radial-gradient(145.05%_100%_at_50%_0%,#1D2B41_0%,#020509_57.38%,#0F1A29_88.16%)]"
-	id="background"
->
+<section class="bg-bg2" id="background">
 	<div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20 flex flex-col">
 		<h2 class="font-bold text-3xl sm:text-6xl flex flex-col text-center text-white">
 			Background of the Study

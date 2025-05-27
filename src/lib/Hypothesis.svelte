@@ -1,4 +1,4 @@
-<section id="hypothesis">
+<section id="hypothesis" class="bg-bg3">
 	<div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20">
 		<div class="flex flex-col md:flex-row gap-10 items-center">
 			<div class="grid gap-12">

@@ -10,9 +10,9 @@
 </script>
 
 <Navbar />
-
-<div class="relative landing-container">
-	<div class="sticky-background sticky top-0 h-screen -z-10 overflow-hidden"></div>
+<div class="font-grotesk">
+	<div class=" relative landing-container color-background">
+		<div class="sticky-background sticky top-0 h-screen -z-10 overflow-hidden"></div>
 
 		<div
 			class="background-tint landing-content-wrapper relative z-10 flex flex-col justify-center py-24 md:py-32 -mt-[100vh]"

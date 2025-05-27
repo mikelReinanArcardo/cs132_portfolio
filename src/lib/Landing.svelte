@@ -57,7 +57,8 @@
                        {h1IsVisible ? 'opacity-100 translate-y-0' : ''}"
 			>
 				<span>
-					Relation of the proportion of <strong>households with sanitation facilities</strong> and
+					Relation of the proportion of <strong>households with sanitation facilities</strong>
+					and
 					<strong>dengue cases</strong> per month
 				</span>
 				<style>

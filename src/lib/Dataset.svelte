@@ -1,4 +1,4 @@
-<section id="data">
+<section class="bg-bg2" id="data">
 	<div class="grid justify-center gap-10 m-4">
 		<h2 class="text-2xl font-bold sm:text-6xl text-center">
 			<span>Datasheet</span>

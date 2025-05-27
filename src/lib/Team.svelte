@@ -45,9 +45,12 @@
 	];
 </script>
 
-<section class="py-16" aria-labelledby="team-heading" id="team">
+<section class="py-16 bg-bg2" aria-labelledby="team-heading" id="team">
 	<div class="container mx-auto px-4 md:px-6">
-		<h2 id="team-heading" class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+		<h2
+			id="team-heading"
+			class="font-semibold text-3xl md:text-4xl text-center text-gray-800 mb-12"
+		>
 			Meet The Team
 		</h2>
 

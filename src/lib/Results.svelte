@@ -61,7 +61,7 @@
 <section
 	id="results"
 	aria-labelledby="hypothesis-heading"
-	class="w-screen py-8 min-h-screen flex flex-col"
+	class="w-screen py-8 min-h-screen flex flex-col bg-bg3"
 >
 	<h2 id="hypothesis-heading" class="text-2xl font-bold sm:text-6xl text-center">
 		<span>Results</span>
@@ -81,7 +81,7 @@
 				on:click={() => selectTab(tab.id)}
 				class="py-2 px-4 cursor-pointer border-b-0 mr-1 rounded-t-md transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1
                     {activeTab === tab.id
-					? `${darkGradientBg} font-semibold text-white`
+					? `bg-bg3 font-semibold text-white`
 					: 'bg-gray-200 border border-transparent text-gray-600 hover:bg-gray-300 hover:text-gray-800 mb-[-2px]'}"
 			>
 				{tab.name}
