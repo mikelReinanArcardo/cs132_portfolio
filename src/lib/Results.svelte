@@ -4,9 +4,7 @@
 	import chart3 from '$lib/assets/chart3.png';
 	import chart4 from '$lib/assets/chart4.jpeg';
 	import nutshell from '$lib/assets/nutshell.png';
-
-	const darkGradientBg =
-		'bg-[radial-gradient(145.05%_100%_at_50%_0%,#1D2B41_0%,#020509_57.38%,#0F1A29_88.16%)]';
+	import Icon from "@iconify/svelte";
 
 	const tabs = [
 		{
@@ -61,14 +59,20 @@
 <section
 	id="results"
 	aria-labelledby="hypothesis-heading"
-	class="w-screen py-8 min-h-screen flex flex-col bg-bg3"
+	class="bg-bg3"
 >
-	<h2 id="hypothesis-heading" class="text-2xl font-bold sm:text-6xl text-center">
-		<span>Results</span>
-	</h2>
+<div class=" mx-auto sm:px-7 px-4 max-w-screen-xl py-20 text-white">
+
+	<div class="mx-auto text-4xl md:text-5xl sm:px-7 px-4 gap-4 max-w-screen-xl flex text-lightblue">
+		<Icon icon="material-symbols:table-chart-view" />
+
+		<h2 class="font-bold">
+			<span>Results</span>
+		</h2>
+	</div>
 
 	<div
-		class="flex flex-wrap border-b-2 border-gray-300 mb-0 px-4 md:px-6"
+		class="flex flex-wrap border-b-2 border-gray-300 mb-0 px-4 md:px-6 pt-8"
 		role="tablist"
 		aria-label="Hypothesis testing methods"
 	>
@@ -81,8 +85,8 @@
 				on:click={() => selectTab(tab.id)}
 				class="py-2 px-4 cursor-pointer border-b-0 mr-1 rounded-t-md transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1
                     {activeTab === tab.id
-					? `bg-bg3 font-semibold text-white`
-					: 'bg-gray-200 border border-transparent text-gray-600 hover:bg-gray-300 hover:text-gray-800 mb-[-2px]'}"
+					? `bg-lightblue font-semibold text-white`
+					: 'bg-hpa border border-transparent text-gray-300  '}"
 			>
 				{tab.name}
 			</button>
@@ -91,35 +95,35 @@
 
 	{#if activeTabData}
 		<div
-			class="px-4 md:px-6 py-6 md:py-8 focus:outline-none {darkGradientBg} flex-grow"
+			class="px-4 md:px-6 py-6 md:py-8 focus:outline-none bg-hpq flex-grow flex-col rounded-4xl rounded-t-none"
 			role="tabpanel"
 			id="tab-content-{activeTabData.id}"
 			aria-labelledby="tab-button-{activeTabData.id}"
 			tabindex="0"
 		>
-			<h3 class="text-2xl md:text-3xl font-bold text-center mb-6 text-gray-100">
+			<h3 class="text-2xl md:text-3xl font-bold text-center mb-6 ">
 				{activeTabData.title}
 			</h3>
 
 			<img
-				class="w-[60vw] mx-auto block mb-8 border border-gray-600 rounded shadow-md"
+				class=" w-[80%] place-self-center mb-8 border-bg2 rounded-xl "
 				src={activeTabData.imgSrc}
 				alt="{activeTabData.title} - Placeholder Image"
 			/>
 
 			<div class="w-[85%] mx-auto mb-8">
 				{#if activeTabData.recallTitle}
-					<p class="text-lg text-gray-300 leading-relaxed font-semibold mb-2">
+					<p class="text-lg  leading-relaxed font-semibold mb-2">
 						{activeTabData.recallTitle}
 					</p>
 				{/if}
 				{#if activeTabData.hypothesisNull}
 					<ul class="list-none pl-4 mb-4">
-						<li class="text-lg text-gray-300 leading-relaxed mb-1">
+						<li class="text-lg  leading-relaxed mb-1">
 							<span class="mr-2">°</span>{activeTabData.hypothesisNull}
 						</li>
 						{#if activeTabData.hypothesisAlt}
-							<li class="text-lg text-gray-300 leading-relaxed">
+							<li class="text-lg  leading-relaxed">
 								<span class="mr-2">°</span>{activeTabData.hypothesisAlt}
 							</li>
 						{/if}
@@ -129,7 +133,7 @@
 				{#if activeTabData.description}
 					{#each activeTabData.description.split('\n\n') as paragraph}
 						{#if paragraph.trim() !== ''}
-							<p class="text-lg text-gray-300 leading-relaxed text-justify mb-4">
+							<p class="text-lg  leading-relaxed text-justify mb-4">
 								{paragraph}
 							</p>
 						{/if}
@@ -147,8 +151,9 @@
 			{/if}
 		</div>
 	{:else}
-		<p class="p-4 text-center text-gray-500 flex-grow">
+		<p class="p-4 text-center  flex-grow">
 			Please select a hypothesis testing method.
 		</p>
 	{/if}
+</div>
 </section>
