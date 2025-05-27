@@ -1,7 +1,7 @@
 <script>
 	import '../app.css';
-	import LandingContent from '$lib/Landing.svelte'; // Assuming Landing.svelte is your content
-	import Background from '$lib/Background.svelte'; // Use your actual component
+	import LandingContent from '$lib/Landing.svelte';
+	import Background from '$lib/Background.svelte';
 	import Navbar from '$lib/Navbar.svelte';
 	import Hypothesis from '$lib/Hypothesis.svelte';
 	import Dataset from '$lib/Dataset.svelte';
@@ -14,25 +14,26 @@
 <div class="relative landing-container">
 	<div class="sticky-background sticky top-0 h-screen -z-10 overflow-hidden"></div>
 
-	<div
-		class="background-tint landing-content-wrapper relative z-10 flex flex-col justify-center py-24 md:py-32 -mt-[100vh]"
-	>
-		{#key 'landing'}
-			<LandingContent />
-		{/key}
+		<div
+			class="background-tint landing-content-wrapper relative z-10 flex flex-col justify-center py-24 md:py-32 -mt-[100vh]"
+		>
+			{#key 'landing'}
+				<LandingContent />
+			{/key}
+		</div>
+
+		<div class="next-section-wrapper relative z-20 bg-gray-100">
+			{#key 'next'}
+				<Background />
+			{/key}
+		</div>
 	</div>
 
-	<div class="next-section-wrapper relative z-20 bg-gray-100">
-		{#key 'next'}
-			<Background />
-		{/key}
-	</div>
+	<Hypothesis />
+	<Dataset />
+	<Results />
+	<Team />
 </div>
-
-<Hypothesis />
-<Dataset />
-<Results />
-<Team />
 
 <style>
 	.sticky-background::before {
@@ -56,12 +57,5 @@
 	.background-tint {
 		background-color: rgba(47, 79, 79, 0.2);
 		background-blend-mode: multiply;
-	}
-
-	:global(.text-shadow-md) {
-		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-	}
-	:global(.text-shadow-lg) {
-		text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
 	}
 </style>

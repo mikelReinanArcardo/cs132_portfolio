@@ -11,6 +11,9 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.0.14
         version: 4.0.14(vite@6.2.1(jiti@2.4.2)(lightningcss@1.29.2))
+      aos:
+        specifier: ^2.3.4
+        version: 2.3.4
       tailwindcss:
         specifier: ^4.0.14
         version: 4.0.14

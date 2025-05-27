@@ -18,4 +18,3 @@ To create a production version of your showcase app:
 ```bash
 pnpm run build
 ```
-
