@@ -44,16 +44,10 @@
 		background-position: center center;
 		background-attachment: local;
 		background-image: url('$lib/assets/water.jpg');
-		filter: blur(8px) brightness(0.5);
-		transform: scale(1.05);
-		transition:
-			transform 0.3s ease-in-out,
-			filter 0.3s ease-in-out;
+		filter: blur(2px) brightness(0.6);
+		transform: scale(1.02);
 	}
-	.landing-container:hover .sticky-background::before {
-		transform: scale(1.1);
-		filter: blur(8px) brightness(0.4);
-	}
+
 	.background-tint {
 		background-color: rgba(47, 79, 79, 0.2);
 		background-blend-mode: multiply;
