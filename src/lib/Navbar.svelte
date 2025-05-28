@@ -51,14 +51,14 @@
 				</li>
 				<li>
 					<a
-						href="#"
+						href="#model"
 						class="block py-2 px-3 text-white rounded-sm"
-						aria-current="page">Discussion</a
+						aria-current="page">Model</a
 					>
 				</li>
 				<li>
 					<a
-						href="#"
+						href="#conclusion"
 						class="block py-2 px-3 text-white rounded-sm"
 						aria-current="page">Conclusion</a
 					>

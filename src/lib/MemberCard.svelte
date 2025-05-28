@@ -4,13 +4,9 @@
     const linkedin = $derived(links.find((link) => link.type === "LinkedIn"));
     const github = $derived(links.find((link) => link.type === "GitHub"));
     const email = $derived(links.find((link) => link.type === "Email"));
-
-    console.log(links)
-    console.log(linkedin)
-    console.log(github)
 </script>
 
-<div class="bg-[#1a344a] p-8 rounded-xl shadow-lg max-w-sm w-full mx-auto my-8">
+<div class="flex flex-col bg-[#1a344a] p-8 rounded-xl shadow-lg max-w-sm w-full mx-auto my-8">
     <div class="flex  justify-center mb-6">
         <img
             src={imgSrc}
@@ -27,7 +23,7 @@
         {description}
     </p>
 
-    <div class="flex justify-center space-x-6">
+    <div class="flex justify-center space-x-6 mt-auto">
         {#if linkedin !== undefined}
             <a href={linkedin.url} target="_blank" class="text-lightblue hover:text-bg2 transition-colors duration-200" aria-label="LinkedIn Profile">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">

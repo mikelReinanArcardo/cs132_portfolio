@@ -7,6 +7,8 @@
 	import Dataset from '$lib/Dataset.svelte';
 	import Results from '$lib/Results.svelte';
 	import Team from '$lib/Team.svelte';
+	import Model from '$lib/Model.svelte';
+	import Conclusion from '$lib/Conclusion.svelte';
 </script>
 
 <Navbar />
@@ -32,6 +34,8 @@
 	<Hypothesis />
 	<Dataset />
 	<Results />
+	<Model />
+	<Conclusion />
 	<Team />
 </div>
 
