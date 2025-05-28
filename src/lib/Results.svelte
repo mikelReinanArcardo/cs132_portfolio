@@ -106,7 +106,7 @@
 			</h3>
 
 			<img
-				class=" w-[80%] place-self-center mb-8 border-bg2 rounded-xl "
+				class=" w-[80%] mx-auto mb-8 border-bg2 rounded-xl "
 				src={activeTabData.imgSrc}
 				alt="{activeTabData.title} - Placeholder Image"
 			/>
