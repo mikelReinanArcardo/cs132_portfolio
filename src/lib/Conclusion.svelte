@@ -29,7 +29,10 @@
 					link="https://doi.org/10.3389/fpubh.2024.1420457"
 				/>
 				<BackgroundItem
-					value="The study focuses on the correlation between household sanitation facilities and the number of dengue cases across all 17 regions of the Philippines. In the dot plot above, it is shown that more than 90% of households have improved sanitation facilities; however, the proportion of dengue cases by population is spread out and shows no clear relationship with the presence of sanitation facilities. Furthermore, the statistical findings in the results section further prove that household facilities have no relationship with dengue cases. A shortcoming of this study is the limited availability of data on household sanitation facilities; only the years 2019 to 2022 were included and correlated with dengue case numbers."
+					value="However, in 2020, the peak season for dengue cases occurred in January. This was due to the sudden COVID-19 lockdown, which forced people to stay indoors, thereby lessening the risk of dengue infection. The pandemic had unintended consequences on dengue transmission. While reduced mobility might have led to fewer outdoor breeding grounds, it also led to a decline in routine public health surveillance and vector control programs. This dual effect—reduced exposure and weakened disease control—likely contributed to the irregular peak of dengue cases in January 2020."
+				/>
+				<BackgroundItem
+					value="The dataset used in this study presents a limitation to the findings. A longer period is recommended to more accurately analyze the relationship between household facilities and the incidence of dengue in the country. Moreover, several other factors may have influenced the results. For example, the COVID-19 pandemic in 2022 may have affected dengue case numbers due to population lockdowns and movement restrictions. It is also recommended to explore other contributing factors to the disease, such as modes of transmission and other waterborne disease variants."
 				/>
 			</div>
 		</div>
