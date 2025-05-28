@@ -143,7 +143,7 @@
 
 			{#if activeTabData.imgSrcBottom}
 				<img
-					class="w-[60vw] mx-auto block border border-gray-600 rounded shadow-md"
+					class="w-[60vw] mx-auto block border border-gray-600 rounded self-center shadow-md"
 					src={activeTabData.imgSrcBottom}
 					alt="{activeTabData.title} - Additional Information"
 					loading="lazy"
